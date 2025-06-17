@@ -1,0 +1,64 @@
+.goal-list-container {
+  padding: 20px;
+}
+
+.goal-list-heading {
+  font-size: 22px;
+  margin-bottom: 35px;
+  text-align: center;
+  color: #4b0082;
+}
+
+.goal-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.goal-card {
+  background-color: #ffffff;
+  border: 5px solid #debef6;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.2s ease;
+}
+
+.goal-card:hover {
+  transform: scale(1.03);
+}
+
+.goal-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.goal-info,
+.goal-progress {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+.goal-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: red;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}

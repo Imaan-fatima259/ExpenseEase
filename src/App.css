@@ -1,0 +1,150 @@
+/* Base styles remain the same */
+.cta-buttons {
+  margin-top: 5px;
+}
+.abcd{
+  background-color: white !important;
+
+}
+.btn {
+  margin: 0 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ecd7e1;
+  color: rgb(8, 8, 8);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #030303;
+  color: #f0f0f0;
+}
+
+.navbar {
+  background-color: #0c1b32;
+  padding: 10px 0;
+  box-shadow: 0 2px 4px rgba(62, 57, 82, 0.58);
+  position: fixed;
+  width: 100%;
+  margin-top: 90px;
+  z-index: 100; /* Ensure navbar is on top */
+  transition: top 0.3s;
+}
+
+.navbar.hidden {
+  top: -90px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.header {
+  transition: top 0.3s;
+  /* background: rgb(134, 154, 168); */
+  background: rgb(107, 141, 164);
+  color: white;
+  padding: 2em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  padding: 3px 120px;
+}
+
+.logo-container {
+  text-align: center;
+  margin-top: 0; /* already fine */
+  position: absolute;
+  top: 5px; /* adjust this value as you like */
+  left: 10px; /* if you want it slightly from left, or center if you remove this */
+}
+
+.logo {
+  width: 140px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  color: white;
+  margin-right: 90px;
+}
+.heading-text {
+  font-size: 28px;
+  margin: 0;
+}
+
+.header.hidden {
+  top: -100px; /* Adjust this value if necessary */
+  position: fixed; /* Ensure it stays fixed at the top */
+  width: 100%;
+  z-index: 100; /* Keep it on top */
+}
+
+.section-content {
+  padding-top: 100px; /* Adjust the padding to prevent content overlap */
+}
+
+@media (max-width: 800px) {
+  .header {
+    padding: 5px; /* Reduce padding for smaller screens */
+    font-size: 16px; /* Decrease font size for smaller screens */
+    margin-bottom: 0px;
+  }
+
+  .btn {
+    padding: 5px ; /* Smaller button padding */
+    margin: 5px; /* Reduce margin */
+    font-size: 12px; /* Adjust button font size */
+  }
+
+  .navbar ul {
+    flex-direction: row; /* Ensure nav items remain in a row */
+  }
+
+  .navbar li {
+    margin: 0 10px; /* Adjust margin for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 12px; /* Further adjust font size for very small screens */
+    padding: 8px; /* Further reduce padding */
+  }
+
+ 
+  .btn {
+    font-size: 12px; /* Further adjust button font size */
+    padding: 6px ; /* Further adjust button padding */
+    margin: 3px; /* Further reduce margin */
+  }
+
+  
+  .navbar li {
+    margin: 0 5px; /* Adjust margin for very small screens */
+  }
+  .abcd {
+    height: 5px;
+  }
+}

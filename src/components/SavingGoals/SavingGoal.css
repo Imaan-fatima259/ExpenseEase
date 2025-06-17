@@ -1,0 +1,37 @@
+/* .saving-goals-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+.premium-message {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.saving-goals-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(223, 214, 226);
+        border: 2px solid #ffffff;
+        box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        padding: 1rem;
+        margin-top: 40px;
+        font-size: 2rem;
+        gap: 0.7rem;
+        span {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--color-green);
+        }
+}

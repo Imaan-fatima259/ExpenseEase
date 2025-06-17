@@ -1,0 +1,107 @@
+.features-section {
+  background: linear-gradient(to right, #9dcfec, #f1f2f3); /* Gradient background */
+  padding: 5rem 0;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 2.5rem; /* Larger font size for prominence */
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 700; /* Bold text */
+  color: #1c4532;
+  margin-top: 5rem; /* Moves title further down */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  animation: fadeInUp 1.5s ease-out; /* Fade-in with slide-up effect */
+}
+
+.features-subtitle {
+  color: #4a5568;
+  font-size: 1rem; /* Slightly bigger for clarity */
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: fadeInSubTitle 2s ease-out 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+      transform: translateY(20px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes fadeInSubTitle {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.feature-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-image {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 1.5rem;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1c4532;
+}
+
+.feature-description {
+  color: #4a5568;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.feature-button {
+  background-color: #2f855a;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.feature-button:hover {
+  background-color: #276749;
+}
+
+.features-footer {
+  color: #718096;
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+.features-link {
+  color: #3182ce;
+  text-decoration: underline;
+}

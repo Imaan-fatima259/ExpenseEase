@@ -1,0 +1,135 @@
+/* General Page Styling */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
+    background: linear-gradient(to right, #aac3dd, #ffffff);
+    min-height: 100vh;
+}
+
+/* Left Side Content */
+.about-content {
+    width: 50%;
+}
+
+.about-title {
+    margin-top: 100px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #050303;
+}
+
+.about-subtitle {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.mission {
+    font-size: 26px;
+    font-weight: bold;
+    color: #0a0909;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Right Side Image Grid */
+.about-image-grid {
+    width: 45%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeInImages 2s 0.5s forwards ease-out;
+}
+
+@keyframes fadeInImages {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-box {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    opacity: 0;
+    animation: fadeInImage 1.5s forwards ease-out;
+}
+
+.image-box:nth-child(1) {
+    animation-delay: 0.25s; /* First image appears first */
+}
+
+.image-box:nth-child(2) {
+    animation-delay: 0.6s; /* Second image appears after the first */
+}
+
+.image-box:nth-child(3) {
+    animation-delay: 0.9s; /* Third image appears last */
+}
+
+@keyframes fadeInImage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.image-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Middle Image Adjustment */
+.about-image-grid .image-box:nth-child(2) img {
+    margin-top: 50px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .about-image-grid {
+        width: 100%;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .about-image-grid .image-box {
+        transform: scale(1);
+    }
+}

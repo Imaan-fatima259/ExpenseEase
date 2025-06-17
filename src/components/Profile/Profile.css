@@ -1,0 +1,266 @@
+/* General styling */
+.profile-container {
+  position: relative;
+  width: 400px;
+  margin-top: 20px; 
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  position: absolute; 
+  left: 20px; 
+}
+
+.profile-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.profile-card {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.profile-pic {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #6c63ff;
+}
+
+.profile-info {
+  flex-grow: 1;
+  margin-left: 15px;
+}
+
+.profile-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.profile-username {
+  font-size: 14px;
+  color: gray;
+}
+
+.edit-icon {
+  cursor: pointer;
+  font-size: 22px;
+  color: #6c63ff;
+  transition: transform 0.2s;
+}
+
+.edit-icon:hover {
+  transform: scale(1.2);
+}
+
+.profile-details {
+  margin-top: 15px;
+}
+
+.profile-item {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-item .icon {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #6c63ff;
+}
+
+.logout {
+  cursor: pointer;
+  background: #ffecec;
+  color: red;
+}
+
+.logout-icon {
+  color: red;
+}
+
+.profile-edit-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  position: absolute;
+  right: 0; 
+  top: 0;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.profile-edit-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.save-btn, .cancel-btn {
+  flex: 1;
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #6c63ff, #5a52e0);
+  color: white;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+}
+
+.save-btn:hover {
+  background: linear-gradient(135deg, #5a52e0, #4a41d0);
+  box-shadow: 0 6px 15px rgba(108, 99, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.cancel-btn {
+  background: #ddd;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-btn:hover {
+  background: #c4c4c4;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.save-btn:active,
+.cancel-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.logout-modal {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 320px;
+  position: absolute;
+  top: 49%;
+  left: 20px;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+  border: 1px solid #e0abab;
+}
+
+.logout-modal p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.logout-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-no, .btn-yes {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-no {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.btn-no:hover {
+  background: #e0e0e0;
+}
+
+.btn-yes {
+  background: #6c63ff;
+  color: white;
+}
+
+.btn-yes:hover {
+  background: #574de6;
+}
+
+.min-max-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+
+.min-max-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 1px;
+}
+
+.card.min-max {
+  background: #e5baba;
+  padding: 5px 5px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  min-width: 160px;
+}
